@@ -12,6 +12,17 @@
   "dependencies": {
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
-    "jest": "^24.8.0"
-  }
+    "jest": "^24.9.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgan-401-advanced-javascript/lab01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morgan-401-advanced-javascript/lab01/issues"
+  },
+  "homepage": "https://github.com/morgan-401-advanced-javascript/lab01#readme"
 }
