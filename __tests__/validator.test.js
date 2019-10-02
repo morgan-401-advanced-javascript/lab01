@@ -70,15 +70,23 @@ describe('validator module performs basic validation of', () => {
 });
 
 describe('validator module performs complex validations', () => {
+  let dog = {
+    name: 'Hachi',
+    age: 9,
+    hair: {
+      length: 20,
+    },
+    housebroken: true,
+  };
 
   it('validates the presence of required object properties at any level', () => {
     // i.e. does person.hair.color exist and have a good value, not just person.hair
-    expect(true).toBeFalsy();
+    expect(validator.hasRequiredProperties(dog, dog.hair)).toBeTruthy();
   });
 
   it('validates the proper types of object properties', () => {
     // i.e. person.name must be a string, etc.
-    expect(true).toBeFalsy();
+    expect(validator.hasRequiredProperties(dog.age, 'number')).toBeTruthy();
   });
 
   it('validates the types of values contained in an array', () => {
